@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  /* BEVOX — Documento de Visão e Design System, seção 3 */
+  --color-midnight: #0a192f;
+  --color-midnight-light: #16304f;
+  --color-azure: #2f6feb;
+  --color-azure-light: #e8f0fe;
+  --color-liquid: #1f9d6b;
+  --color-liquid-light: #e4f6ee;
+  --color-amber: #f5a524;
+  --color-amber-light: #fdf0dc;
+  --color-danger: #e5484d;
+  --color-danger-light: #fbe4e4;
+  --color-paper: #f4f6f9;
+  --color-ink: #10192b;
+  --color-muted: #5b6472;
+  --color-line: #e1e6ee;
+}
+
+@theme inline {
+  --color-midnight: var(--color-midnight);
+  --color-midnight-light: var(--color-midnight-light);
+  --color-azure: var(--color-azure);
+  --color-azure-light: var(--color-azure-light);
+  --color-liquid: var(--color-liquid);
+  --color-liquid-light: var(--color-liquid-light);
+  --color-amber: var(--color-amber);
+  --color-amber-light: var(--color-amber-light);
+  --color-danger: var(--color-danger);
+  --color-danger-light: var(--color-danger-light);
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
